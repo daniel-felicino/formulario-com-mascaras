@@ -1,6 +1,5 @@
 import { clienteServer } from "./criaPost.js";
 
-const formulario = document.getElementById('btnEnviar')
 
 async function cadastrarDadodsNovos(e) {
     e.preventDefault()
@@ -16,7 +15,6 @@ async function cadastrarDadodsNovos(e) {
     window.location.href = "lista.html";
 
 }
-formulario.addEventListener("click", (e) => cadastrarDadodsNovos(e));
 
 
 

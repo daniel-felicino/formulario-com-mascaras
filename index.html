@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Mascaras</title>
+  </head>
+
+  <body>
+    <!-- <div class="container">
+
+      <div class="navegacao" onclick="navegacaoMenu()">
+        <i class="fa fa-bars"></i>
+      </div>
+
+    </div>
+    <nav class="menu__lateral" id="menuLink">
+      <a href="#" class="menu__lateral__link menu__lateral__link__inicio menu__lateral__link--ativo"><i
+          class="fa fa-home"></i>Inicio</a>
+      <a href="#" class="menu__lateral__link menu__lateral__link__videos"><i class="fa fa-video-camera"></i>Videos</a>
+      <a href="#" class="menu__lateral__link menu__lateral__link__picos"><i class="fa fa-map-marker"></i>Picos</a>
+      <a href="#" class="menu__lateral__link menu__lateral__link__integrantes"><i class="fa fa-users"></i>Integrantes</a>
+      <a href="#" class="menu__lateral__link  menu__lateral__link__camisas"><i class="fa fa-male"></i>Camisas</a>
+      <a href="#" class="menu__lateral__link  menu__lateral__link__pinturas"><i class="fa fa-picture-o"></i>Pinturas</a>
+    </nav> -->
+    <div id="formulario" class="principal">
+      
+      <form id="formulariocadastro">
+        Formulario de cadastro<br/>
+        <label>id</label><br/>
+        <input id="id" placeholder="id" /><br />
+        <label>CPF</label><br />
+        <input id="cpf" onkeyup="mascaraCpf(event)" placeholder="cpf" /><br />
+        <label>CARTÃO</label><br />
+        <input
+          id="cartao"
+          onkeyup="mascaraCartao(event)"
+          placeholder="cartão"
+        /><br />
+        <label>CNPJ</label><br />
+        <input
+          id="cnpj"
+          onkeyup="mascaracnpj(event)"
+          placeholder="CNPJ"
+        /><br />
+        <label>CELULAR</label><br />
+        <input
+          id="celular"
+          onkeyup="mascaraCelular(event)"
+          maxlength="15"
+          placeholder="CELULAR"
+        /><br/>
+        <label>EMAIL</label><br />
+        <input id="email" placeholder="EMAIL" /><br />
+        <button id="btnEnviar">Enviar</button>
+      </form>
+    </div>
+
+    <script src="./js/mascaras.js"></script>
+    <script type="module" src="./js/post.js"></script>
+    <script type="module" src="./js/criaPost.js"></script>
+  </body>
+</html>

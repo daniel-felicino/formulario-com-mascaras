@@ -24,7 +24,10 @@ async function lista() {
         botaoRemover.style.background = "red"
         botaoRemover.style.color = 'white'
         botaoRemover.style.padding = '5px'
+        botaoRemover.style.marginTop = '1px'
+        botaoRemover.style.height = '38px'
 
+       
         thId.innerText = payload.id
         tdCpf.innerText = payload.cpf
         tdCartao.innerText = payload.cartao
